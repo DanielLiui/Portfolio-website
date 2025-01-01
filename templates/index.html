@@ -12,10 +12,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
   <div class="sect" id="intro-sect">
     <img src="/static/assets/Rengoku costume.jpg" id="profile-pic" alt="">
 
@@ -29,44 +29,42 @@
         <a href="https://www.instagram.com/sycho_dan/" target="_blank"> <i class="fa-brands fa-instagram icon"> </i> </a>
       </div>  
 
-      <button class="gold-btn"> Download resume </button> <!-- -->
+      <button class="gold-btn"> Download resume </button>
     </div>
   </div>
 
-  <hr>
+  <div class="hr-div"> <hr> </div>
 
   <div class="sect" id="tech-stack">
     <h3 class="sect-title"> Tech stack </h3>
-    <p class="subtitle"> Languages </p>
-    <p class="text"> Python / Java / C / C++ / C# / Bash </p>
-    
-    <p class="subtitle"> Web </p>
-    <p class="text"> HTML / CSS / JS / Node.js / Bootstrap / React / Flask / Express </p>
 
-    <p class="subtitle"> AI and ML </p>
-    <p class="text"> Langchain / Pytorch / Tensorflow / Roboflow / YoloV5 </p>
+    <div class="stack">
+      <span class="subtitle"> Languages </span>
+      <span class="text stack-emdash"> ➜ </span> <span class="text"> Python / Java / C / C++ / C# / Bash </span>
+    </div>
+
+    <div class="stack">
+      <span class="subtitle"> Web </span>
+      <span class="text stack-emdash"> ➜ </span> <span class="text"> HTML / CSS / JS / Node.js / Bootstrap / React / Flask / Express </span>
+    </div>
+
+    <div class="stack">
+      <span class="subtitle"> AI and ML </span>
+      <span class="text stack-emdash"> ➜ </span> <span class="text"> Langchain / Pytorch / Tensorflow / Roboflow / YoloV5 </span>
+    </div>
   </div>
 
-  <hr>
+  <div class="hr-div"> <hr> </div>
 
   <div class="sect" id="project-sect">
     <h3 class="sect-title"> Projects </h3>
 
     <div class="project"> 
       <img src="static/assets/medAnomalyScanner.png" alt="" class="proj-img">
-      <div class="proj-content">
+      <div class="proj-content"> 
         <p class="subtitle"> Medical anomaly scanner </p>
-        <p class="text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aliquid et eaque placeat enim asperiores? </p>
-        <a href="#"> <button class="gold-btn"> Try it out </button>  </a>
-      </div>
-    </div>
-    
-    
-    <div class="project">
-      <img src="static/assets/medAnomalyScanner.png" alt="" class="proj-img">
-      <div class="proj-content">
-        <p class="subtitle"> Animated chatbot </p>
-        <p class="text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aliquid et eaque placeat enim asperiores? </p>
+        <p class="text proj-text"> A machine learning model that detects medical conditions in brain CT scans and spinal X-rays. </p>
+        <p class="text tools-p"> <span style="font-weight: bold"> Tools: </span> <span> YOLOv5/Flask/HTML/CSS/JS/Flask </span> </p>
         <a href="#"> <button class="gold-btn"> Try it out </button>  </a>
       </div>
     </div>
@@ -74,22 +72,34 @@
     <div class="project">
       <img src="static/assets/medAnomalyScanner.png" alt="" class="proj-img">
       <div class="proj-content">
-        <p class="subtitle"> Image categorization using object detection </p>
-        <p class="text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aliquid et eaque placeat enim asperiores? </p>
+        <p class="subtitle"> Animated chatbot </p>
+        <p class="text proj-text"> An animated chatbot who talks to you out loud with facial expressions!  </p>
+        <p class="text tools-p"> <span style="font-weight: bold"> Tools: </span> <span> Langchain/Flask/HTML/CSS/JS/Flask </span> </p>
+        <a href="#"> <button class="gold-btn"> Try it out </button>  </a>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="static/assets/medAnomalyScanner.png" alt="" class="proj-img">
+      <div class="proj-content">
+        <p class="subtitle"> Dad jokes website </p>
+        <p class="text proj-text"> Your place to get some dad jokes and see my dad drawings 😳 </p>
+        <p class="text tools-p"> <span style="font-weight: bold"> Tools: </span> <span> React/Flask/HTML/CSS/JS/Flask </span> </p>
         <a href="#"> <button class="gold-btn"> Try it out </button>  </a>
       </div>
     </div>
 
   </div>
 
-  <hr>
+  <div class="hr-div"> <hr> </div>
 
   <div class="sect" id="work-sect">
     <div class="work"> 
       <h3 class="sect-title"> Work experience</h3>
-      <p class="comment"> (Aug 2023 - Oct 2024)</p>
+      <img src="/static/assets/metro logo.png" id="metro-logo" alt="">
       <p class="subtitle"> Metro cashier </p>
-      <p class="text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aliquid et eaque placeat enim asperiores </p>
+      <p class="comment"> (Aug 2023 - Oct 2024)</p>
+      <p class="text"> </p>
     </div>
   </div>
 
@@ -105,6 +115,5 @@
     </div>  
   </div>
 
-  <script src="/static/client.js"></script>
 </body>
 </html>
