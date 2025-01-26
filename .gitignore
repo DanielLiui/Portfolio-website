@@ -1,2 +1,4 @@
 test.py
 readMe.js
+__pycache__/
+.vscode/
