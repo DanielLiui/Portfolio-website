@@ -122,9 +122,19 @@ p {
 }
 .stack {
   margin: 10px 0 10px 0;
+  width: 80%;
+}
+.tech-box {
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  border-radius: 30px;
+  /* background-color: rgb(255, 224, 159); */
 }
 .stack-emdash {
   padding: 0 10px 0 10px;
+}
+.tech-subtitle {
+  margin: 15px 0 15px 0;
 }
 
 
