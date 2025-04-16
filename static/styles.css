@@ -28,10 +28,10 @@ body {
   width: 100vw;
 }
 hr { /* horizontal line */
-  color: rgb(192, 192, 192);
+  color: rgb(73, 73, 73);
   width: 80%;
   margin-top: var(--sect-hr-space); margin-bottom: var(--sect-hr-space);
-  height: 4px;
+  height: 6px;
 }
 .text {
   font-family: "Inter";
@@ -174,7 +174,7 @@ p {
   .project {
     flex-direction: row;
     justify-content: center;
-    width: 700px;
+    width: 80%;
   }
   .proj-img {
     margin: 0 20px 0 0;
