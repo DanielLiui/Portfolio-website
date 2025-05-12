@@ -1,0 +1,2 @@
+Suppress youtube and related warnings:
+filter: -youtube -base -player

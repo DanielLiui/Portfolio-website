@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="#">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"         
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/testStyles.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="sect" id="intro-sect">
+    <img src="/static/assets/Rengoku costume.jpg" id="profile-pic" alt="">
+
+    <div id="intro-content">
+      <h1 id="name"> Daniel Liu </h1>
+      <p class="text" id="profile-description"> Hi I’m Daniel! I’m a web developer and computer science student in Carleton University's AI and machine learning stream. I like being creative!</p>
+      
+      <div id="social-media-icons">
+        <a href="https://www.linkedin.com/in/daniel-liu-2938b0260/" target="_blank"> <i class="fa-brands fa-linkedin icon"> </i> </a>
+        <a href="https://github.com/DanielLiui" target="_blank"> <i class="fa-brands fa-github icon"> </i> </a>
+        <a href="https://www.instagram.com/sycho_dan/" target="_blank"> <i class="fa-brands fa-instagram icon"> </i> </a>
+      </div>  
+
+      <button id="shiny-btn" class="gold-btn"> Shiny button </button>
+    </div>
+  </div>
+
+  <div class="hr-div"> <hr> </div>
+
+  <!--
+  <div id="tech-stack">
+    <h3 class="sect-title"> Tech stack </h3>
+
+    <p class="subtitle tech-subtitle"> Languages </p>
+
+    <div class="tech-divs"> 
+      <div class="tech-div">
+        <img class="tech-img" src="/static/assets/tech_images/python.png" alt="">
+        <p class="tech-text"> Python </p>
+      </div>
+
+      <div class="tech-div">
+        <img class="tech-img" src="/static/assets/tech_images/java.png" alt="">
+        <p class="tech-text"> Java </p>
+      </div>
+
+      <div class="tech-div">
+        <img class="tech-img" src="/static/assets/tech_images/C.png" alt="">
+        <p class="tech-text"> C </p>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="hr-div"> <hr> </div> 
+  -->
+
+  <div id="gif-div"> 
+    <img class="gif" src="{{ url_for('static', filename='assets/gifs/cat rave.gif') }}" alt="">
+  </div>
+
+  <img id="nyan-cat" src="{{ url_for('static', filename='assets/gifs/nyan cat.gif') }}" alt="Nyan cat image">
+  <audio id="nyan-cat-audio" src="{{ url_for('static', filename='assets/gifs/nyan cat track.mp3') }}"></audio>
+
+  <script src="{{ url_for('static', filename='global.js') }}"></script>
+  <script src="{{ url_for('static', filename='client.js') }}"></script>
+
+</body>
+</html>
