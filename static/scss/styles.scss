@@ -201,12 +201,35 @@ p {
   align-items: center; text-align: center;
   width: 100%;
 }
+
 .project {
   display: flex; flex-direction: column;
   align-items: center;
   margin: 10px 0 20px 0;
   width: 80%;
 }
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.video-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  font-size: 1.1em;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: 2;
+}
+
 .proj-img {
   border-radius: 20px;
   width: 100%;
@@ -214,12 +237,15 @@ p {
   margin: 20px;
   overflow: hidden;
 }
+
 .proj-text {
   margin: 5px 0 15px 0;
 }
+
 .proj-content {
   background: transparent;  
 }
+
 .tools-p {
   margin: 15px 0 15px 0;
 }

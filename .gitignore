@@ -1,4 +1,6 @@
 test.py
+/templates/test.html
+/static/css/testStyles.css
 readMe.js
 __pycache__/
 .vscode/

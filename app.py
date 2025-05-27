@@ -1,5 +1,6 @@
 
 import os, random
+from collections import deque
 from flask import Flask, render_template, url_for, request, jsonify
 from flask_assets import Environment, Bundle
 
@@ -10,12 +11,14 @@ scss = Bundle('scss/styles.scss', filters='libsass', output='css/styles.css')
 assets.register('scss_all', scss)
 scss.build()
 
-
-#functs
-
+prev_gifs = deque([], maxlen=5)
 
 
-#routes
+# FUNCTIONS
+
+
+
+# ROUTES
 @app.route("/")
 def home():
   return render_template("index.html")
@@ -28,12 +31,21 @@ def tech_stack():
 
 @app.route("/randomGif", methods=['GET'])
 def show_random_gif():
-  gifs_folder = './static/assets/gifs'
-  gif_file_names = [f for f in os.listdir(gifs_folder) if f.endswith('.gif')]
-  print(f'gif files: {gif_file_names}')
+  gifs_folder = './static/assets/gifs'  #can also contain images
+  gif_file_names = [f for f in os.listdir(gifs_folder)]
+  #print(f'gif files: {gif_file_names}')
+  print(f'previous gifs: {prev_gifs}')
 
+  # don't return gif that was shown in the previous 5 times
+  # previous 5 gifs can be from diff users
   random_i = random.randint(0, len(gif_file_names) - 1)
   gif_file_name = gif_file_names[random_i]
+
+  while gif_file_name in prev_gifs:
+    random_i = random.randint(0, len(gif_file_names) - 1)
+    gif_file_name = gif_file_names[random_i]
+
+  prev_gifs.appendleft(gif_file_name)
   gif_path = f'/static/assets/gifs/{gif_file_name}'
   resp = {'gifPath': gif_path, 'gifFileName': gif_file_name}
   return jsonify(resp)

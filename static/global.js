@@ -7,5 +7,9 @@ function qSel(elemType) {
   return document.querySelector(elemType)
 }
 
+function qSelAll(elemType) {
+  return document.querySelectorAll(elemType)
+}
+
 
 
